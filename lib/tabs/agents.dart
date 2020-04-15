@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:valorantinfo/tabs/skills/breach.dart';
 
 class Agents extends StatelessWidget {
   @override
@@ -25,7 +26,11 @@ class Agents extends StatelessWidget {
                         ),
                         FlatButton(
                           child: const Text('LISTEN'),
-                          onPressed: () {/* ... */},
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Breach());
+                            Navigator.push(context, route);
+                          },
                         ),
                       ],
                     ),
@@ -110,7 +115,7 @@ class Agents extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     Image.network(
-                       'https://img.resized.co/dexerto/eyJkYXRhIjoie1widXJsXCI6XCJodHRwczpcXFwvXFxcL2ltYWdlcy5kZXhlcnRvLmNvbVxcXC91cGxvYWRzXFxcLzIwMjBcXFwvMDRcXFwvMDcxMjIwNTdcXFwvaG93LXRvLXBsYXktYXMtc2FnZS5qcGdcIixcIndpZHRoXCI6NjIwLFwiaGVpZ2h0XCI6MzQ3LFwiZGVmYXVsdFwiOlwiaHR0cHM6XFxcL1xcXC9zMy1ldS13ZXN0LTEuYW1hem9uYXdzLmNvbVxcXC9wcGx1cy5pbWFnZXMuZGV4ZXJ0by5jb21cXFwvdXBsb2Fkc1xcXC8yMDE5XFxcLzExXFxcLzExMjE0OTQzXFxcL3BsYWNlaG9sZGVyLmpwZ1wifSIsImhhc2giOiI4ODlkMDUzZTg4MTRkMmYyMjYwZjcwODliMDFhNDVjMzY4ZTAxNDdiIn0=/how-to-play-as-sage-valorant-s-supportive-sentinel-agent.jpg',
+                        'https://img.resized.co/dexerto/eyJkYXRhIjoie1widXJsXCI6XCJodHRwczpcXFwvXFxcL2ltYWdlcy5kZXhlcnRvLmNvbVxcXC91cGxvYWRzXFxcLzIwMjBcXFwvMDRcXFwvMDcxMjIwNTdcXFwvaG93LXRvLXBsYXktYXMtc2FnZS5qcGdcIixcIndpZHRoXCI6NjIwLFwiaGVpZ2h0XCI6MzQ3LFwiZGVmYXVsdFwiOlwiaHR0cHM6XFxcL1xcXC9zMy1ldS13ZXN0LTEuYW1hem9uYXdzLmNvbVxcXC9wcGx1cy5pbWFnZXMuZGV4ZXJ0by5jb21cXFwvdXBsb2Fkc1xcXC8yMDE5XFxcLzExXFxcLzExMjE0OTQzXFxcL3BsYWNlaG9sZGVyLmpwZ1wifSIsImhhc2giOiI4ODlkMDUzZTg4MTRkMmYyMjYwZjcwODliMDFhNDVjMzY4ZTAxNDdiIn0=/how-to-play-as-sage-valorant-s-supportive-sentinel-agent.jpg',
                         height: 230,
                         width: 500),
                     ButtonBar(
