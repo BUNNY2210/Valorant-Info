@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Viper extends StatelessWidget {
+class Omen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +20,7 @@ class Viper extends StatelessWidget {
                   });
             },
           ),
-          title: Text("VIPER"),
+          title: Text("OMEN"),
           backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         ),
         backgroundColor: Color.fromRGBO(14, 76, 71, 1),
@@ -38,10 +38,10 @@ class Viper extends StatelessWidget {
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/viper_c.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/omen_c.png"),
                       ),
                       title: Text(
-                        'C  Snake Bite',
+                        'C  Shrouded Step',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -49,7 +49,7 @@ class Viper extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a chemical launcher. FIRE to launch a canister that shatters upon hitting the floor, creating a lingering chemical zone that damages and slows enemies.',
+                      'EQUIP a shadow walk ability and see its range indicator. FIRE to begin a brief channel, then teleport to the marked location.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -90,10 +90,10 @@ class Viper extends StatelessWidget {
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/viper_q.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/omen_q.png"),
                       ),
                       title: Text(
-                        'Q  Poison Cloud',
+                        'Q  Paranoia',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -101,7 +101,7 @@ class Viper extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a gas emitter. FIRE to throw the emitter that perpetually remains throughout the round. RE-USE the ability to create a toxic gas cloud at the cost of fuel. This ability can be RE-USED more than once and can be picked up to be REDEPLOYED.',
+                      'INSTANTLY fire a shadow projectile forward, briefly reducing the vision range of all players it touches. This projectile can pass straight through walls.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -142,10 +142,10 @@ class Viper extends StatelessWidget {
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/viper_e.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/omen_e.png"),
                       ),
                       title: Text(
-                        'E  Toxic Screen',
+                        'E  Dark Cover',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -153,7 +153,7 @@ class Viper extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a gas emitter launcher. FIRE to deploy a long line of gas emitters. RE-USE the ability to create a tall wall of toxic gas at the cost of fuel. This ability can be RE-USED more than once.',
+                      'EQUIP a shadow orb and see its range indicator. FIRE to throw the shadow orb to the marked location, creating a long-lasting shadow sphere that blocks vision. HOLD ALTERNATE FIRE while targeting to move the marker further away. HOLD the ability key while targeting to move the marker closer.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -169,12 +169,12 @@ class Viper extends StatelessWidget {
                         SizedBox(
                           width: 3,
                         ),
-                        FaIcon(FontAwesomeIcons.dotCircle,
+                        FaIcon(FontAwesomeIcons.clock,
                             color: Color.fromRGBO(30, 229, 179, 1)),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
-                            'Reusable',
+                            '30s Cooldown',
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
@@ -194,10 +194,10 @@ class Viper extends StatelessWidget {
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/viper_x.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/omen_x.png"),
                       ),
                       title: Text(
-                        'X  Viper’s Pit',
+                        'X  From the Shadows',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -205,7 +205,7 @@ class Viper extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a chemical sprayer. FIRE to spray a chemical cloud in all directions around Viper, creating a large cloud that reduces the vision range and maximum health of players inside of it.',
+                      'EQUIP a tactical map. FIRE to begin teleporting to the selected location. While teleporting, Omen will apppear as a Shade that can be destroyed by an enemy to cancel his teleport.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
