@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:valorantinfo/tabs/skills/breach.dart';
 
 class Agents extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromRGBO(253, 77, 91, 1),
+        backgroundColor: Color.fromRGBO(253, 70, 85, 1),
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
@@ -25,7 +26,11 @@ class Agents extends StatelessWidget {
                           onPressed: () {/* ... */},
                         ),
                         FlatButton(
-                          child: const Text('Skills'),
+                          child: FaIcon(
+                            FontAwesomeIcons.infoCircle,
+                            size: 25,
+                            color: Colors.white,
+                          ),
                           onPressed: () {
                             Route route = MaterialPageRoute(
                                 builder: (context) => Breach());
@@ -53,8 +58,16 @@ class Agents extends StatelessWidget {
                           onPressed: () {/* ... */},
                         ),
                         FlatButton(
-                          child: const Text('Skills'),
-                          onPressed: () {/* ... */},
+                          child: FaIcon(
+                            FontAwesomeIcons.infoCircle,
+                            size: 25,
+                            color: Colors.white,
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Breach());
+                            Navigator.push(context, route);
+                          },
                         ),
                       ],
                     ),
@@ -77,8 +90,16 @@ class Agents extends StatelessWidget {
                           onPressed: () {/* ... */},
                         ),
                         FlatButton(
-                          child: const Text('Skills'),
-                          onPressed: () {/* ... */},
+                          child: FaIcon(
+                            FontAwesomeIcons.infoCircle,
+                            size: 25,
+                            color: Colors.white,
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Breach());
+                            Navigator.push(context, route);
+                          },
                         ),
                       ],
                     ),
@@ -101,8 +122,16 @@ class Agents extends StatelessWidget {
                           onPressed: () {/* ... */},
                         ),
                         FlatButton(
-                          child: const Text('Skills'),
-                          onPressed: () {/* ... */},
+                          child: FaIcon(
+                            FontAwesomeIcons.infoCircle,
+                            size: 25,
+                            color: Colors.white,
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Breach());
+                            Navigator.push(context, route);
+                          },
                         ),
                       ],
                     ),
@@ -125,8 +154,16 @@ class Agents extends StatelessWidget {
                           onPressed: () {/* ... */},
                         ),
                         FlatButton(
-                          child: const Text('Skills'),
-                          onPressed: () {/* ... */},
+                          child: FaIcon(
+                            FontAwesomeIcons.infoCircle,
+                            size: 25,
+                            color: Colors.white,
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Breach());
+                            Navigator.push(context, route);
+                          },
                         ),
                       ],
                     ),
@@ -149,8 +186,16 @@ class Agents extends StatelessWidget {
                           onPressed: () {/* ... */},
                         ),
                         FlatButton(
-                          child: const Text('Skills'),
-                          onPressed: () {/* ... */},
+                          child: FaIcon(
+                            FontAwesomeIcons.infoCircle,
+                            size: 25,
+                            color: Colors.white,
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Breach());
+                            Navigator.push(context, route);
+                          },
                         ),
                       ],
                     ),
@@ -173,8 +218,16 @@ class Agents extends StatelessWidget {
                           onPressed: () {/* ... */},
                         ),
                         FlatButton(
-                          child: const Text('Skills'),
-                          onPressed: () {/* ... */},
+                          child: FaIcon(
+                            FontAwesomeIcons.infoCircle,
+                            size: 25,
+                            color: Colors.white,
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Breach());
+                            Navigator.push(context, route);
+                          },
                         ),
                       ],
                     ),
@@ -197,8 +250,16 @@ class Agents extends StatelessWidget {
                           onPressed: () {/* ... */},
                         ),
                         FlatButton(
-                          child: const Text('Skills'),
-                          onPressed: () {/* ... */},
+                          child: FaIcon(
+                            FontAwesomeIcons.infoCircle,
+                            size: 25,
+                            color: Colors.white,
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Breach());
+                            Navigator.push(context, route);
+                          },
                         ),
                       ],
                     ),
@@ -221,8 +282,16 @@ class Agents extends StatelessWidget {
                           onPressed: () {/* ... */},
                         ),
                         FlatButton(
-                          child: const Text('Skills'),
-                          onPressed: () {/* ... */},
+                          child: FaIcon(
+                            FontAwesomeIcons.infoCircle,
+                            size: 25,
+                            color: Colors.white,
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Breach());
+                            Navigator.push(context, route);
+                          },
                         ),
                       ],
                     ),
@@ -245,8 +314,16 @@ class Agents extends StatelessWidget {
                           onPressed: () {/* ... */},
                         ),
                         FlatButton(
-                          child: const Text('Skills'),
-                          onPressed: () {/* ... */},
+                          child: FaIcon(
+                            FontAwesomeIcons.infoCircle,
+                            size: 25,
+                            color: Colors.white,
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Breach());
+                            Navigator.push(context, route);
+                          },
                         ),
                       ],
                     ),
