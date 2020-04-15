@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:valorantinfo/tabs/skills/breach.dart';
+import 'package:valorantinfo/tabs/skills/viper.dart';
 
 class Agents extends StatelessWidget {
   @override
@@ -65,7 +66,7 @@ class Agents extends StatelessWidget {
                           ),
                           onPressed: () {
                             Route route = MaterialPageRoute(
-                                builder: (context) => Breach());
+                                builder: (context) => Viper());
                             Navigator.push(context, route);
                           },
                         ),
