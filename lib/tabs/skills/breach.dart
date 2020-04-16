@@ -74,7 +74,7 @@ class Breach extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            onPressed: _launchURL),
+                            onPressed: _c),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -129,6 +129,24 @@ class Breach extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                          color: Colors.transparent,
+                          child: Row(
+                            children: <Widget>[
+                              Text('Preview',
+                                  style: TextStyle(color: Colors.white)),
+                              SizedBox(
+                                width: 4,
+                              ),
+                              FaIcon(
+                                FontAwesomeIcons.youtube,
+                                size: 25,
+                                color: Colors.white,
+                              ),
+                            ],
+                          ),
+                          onPressed: _q,
+                        ),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -266,13 +284,23 @@ class Breach extends StatelessWidget {
         ));
   }
 
-  _launchURL() async {
+  _c() async {
     const url =
-        'https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_X.mp4';
+        'https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_C.mp4';
     if (await canLaunch(url)) {
       await launch(url);
     } else {
       throw 'Could not launch $url';
     }
+  }
+}
+
+_q() async {
+  const url =
+      'https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_Q.mp4';
+  if (await canLaunch(url)) {
+    await launch(url);
+  } else {
+    throw 'Could not launch $url';
   }
 }
