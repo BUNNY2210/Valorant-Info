@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-class Breach extends StatelessWidget {
+class Jett extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +20,7 @@ class Breach extends StatelessWidget {
                   });
             },
           ),
-          title: Text("BREACH"),
+          title: Text("JETT"),
           backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         ),
         backgroundColor: Color.fromRGBO(14, 76, 71, 1),
@@ -33,18 +32,16 @@ class Breach extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
+                    SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_c.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/jett_c.png"),
                       ),
                       title: Text(
-                        'C  AfeterShock',
+                        'C  Cloudburst',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -52,29 +49,12 @@ class Breach extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a fusion charge. FIRE the charge to set a slow-acting burst through the wall. The burst does heavy damage to anyone caught in its area.',
+                      'INSTANTLY throw a projectile that expands into a brief vision-blocking cloud on impact with a surface. HOLD the ability key to curve the smoke in the direction of your crosshair.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
                     ButtonBar(
                       children: <Widget>[
-                        RaisedButton(
-                            color: Colors.transparent,
-                            child: Row(
-                              children: <Widget>[
-                                Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
-                                SizedBox(
-                                  width: 4,
-                                ),
-                                FaIcon(
-                                  FontAwesomeIcons.youtube,
-                                  size: 25,
-                                  color: Colors.white,
-                                ),
-                              ],
-                            ),
-                            onPressed: _launchURL),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -104,18 +84,16 @@ class Breach extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
+                    SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_q.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/jett_q.png"),
                       ),
                       title: Text(
-                        'Q  Flashpoint',
+                        'Q  Updraft',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -123,7 +101,7 @@ class Breach extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a blinding charge. FIRE the charge to set a fast-acting burst through the wall. The charge detonates to blind all players looking at it.',
+                      'INSTANTLY propel Jett high into the air.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -158,18 +136,16 @@ class Breach extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
+                    SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_e.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/jett_e.png"),
                       ),
                       title: Text(
-                        'E  Fault Line',
+                        'E  Tailwind',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -177,7 +153,7 @@ class Breach extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a seismic blast. HOLD FIRE to increase the distance. RELEASE to set off the quake, dazing all players in its zone and in a line up to the zone.',
+                      'INSTANTLY propel Jett in the direction she is moving. If Jett is standing still, she will propel forward.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -186,19 +162,19 @@ class Breach extends StatelessWidget {
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
-                            'Cost',
+                            'Require',
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
                         SizedBox(
                           width: 3,
                         ),
-                        FaIcon(FontAwesomeIcons.clock,
+                        FaIcon(FontAwesomeIcons.dotCircle,
                             color: Color.fromRGBO(30, 229, 179, 1)),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
-                            '35s Cooldown',
+                            '2 Kills',
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
@@ -212,18 +188,16 @@ class Breach extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
+                    SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_x.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/jett_x.png"),
                       ),
                       title: Text(
-                        'X  Rolling Thunder',
+                        'X  Blade Storm',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -231,7 +205,7 @@ class Breach extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a Seismic Charge. FIRE to send a cascading quake through all terrain in a large cone. The quake dazes and knocks up anyone caught in it.',
+                      'EQUIP a set of highly accurate throwing knives that recharge on killing an opponent. FIRE to throw a single knife at your target. ALTERNATE FIRE to throw all remaining daggers at your target.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -264,15 +238,5 @@ class Breach extends StatelessWidget {
             ],
           ),
         ));
-  }
-
-  _launchURL() async {
-    const url =
-        'https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_X.mp4';
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
   }
 }

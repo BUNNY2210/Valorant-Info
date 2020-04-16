@@ -12,15 +12,10 @@ class _MyAppState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return new SplashScreen(
+      backgroundColor: Color.fromRGBO(14, 24, 35, 1),
       seconds: 2,
       navigateAfterSeconds: new MyHome(),
-      title: new Text('Valorant Info',
-      style: new TextStyle(
-        fontWeight: FontWeight.bold,
-        fontSize: 20.0
-      ),),
       image: new Image.asset('img/valorant.jpg'),
-      backgroundColor: Colors.white,
       styleTextUnderTheLoader: new TextStyle(),
       photoSize: 100.0,
       onClick: ()=>print("Flutter Egypt"),

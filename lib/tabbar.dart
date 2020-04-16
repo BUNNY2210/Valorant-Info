@@ -39,7 +39,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
         backgroundColor: Color.fromRGBO(14, 24, 35, 1),
       ),
       body: TabBarView(
-        children: <Widget>[Agents(), Weapons(), ThirdTab()],
+        children: <Widget>[Agents(), Weapons(), Maps()],
         controller: controller,
       ),
       bottomNavigationBar: Material(

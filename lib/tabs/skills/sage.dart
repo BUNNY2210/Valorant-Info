@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-class Breach extends StatelessWidget {
+class Sage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +20,7 @@ class Breach extends StatelessWidget {
                   });
             },
           ),
-          title: Text("BREACH"),
+          title: Text("SAGE"),
           backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         ),
         backgroundColor: Color.fromRGBO(14, 76, 71, 1),
@@ -33,18 +32,16 @@ class Breach extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
+                    SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_c.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/sage_c.png"),
                       ),
                       title: Text(
-                        'C  AfeterShock',
+                        'C  Barrier Orb',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -52,29 +49,64 @@ class Breach extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a fusion charge. FIRE the charge to set a slow-acting burst through the wall. The burst does heavy damage to anyone caught in its area.',
+                      'EQUIP a barrier orb. FIRE places a solid wall. ALT FIRE rotates the targeter.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
                     ButtonBar(
                       children: <Widget>[
-                        RaisedButton(
-                            color: Colors.transparent,
-                            child: Row(
-                              children: <Widget>[
-                                Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
-                                SizedBox(
-                                  width: 4,
-                                ),
-                                FaIcon(
-                                  FontAwesomeIcons.youtube,
-                                  size: 25,
-                                  color: Colors.white,
-                                ),
-                              ],
-                            ),
-                            onPressed: _launchURL),
+                        Align(
+                          alignment: Alignment(0.2, 0.6),
+                          child: Text(
+                            'Cost',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        FaIcon(FontAwesomeIcons.dotCircle,
+                            color: Color.fromRGBO(30, 229, 179, 1)),
+                        Align(
+                          alignment: Alignment(0.2, 0.6),
+                          child: Text(
+                            '300',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                color: Color.fromRGBO(48, 103, 98, 1),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    SizedBox(height: 5,),
+                    const ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        maxRadius: 30.0,
+                        backgroundImage: NetworkImage(
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/sage_q.png"),
+                      ),
+                      title: Text(
+                        'Q  Slow Orb',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      'EQUIP a slowing orb. FIRE to throw a slowing orb forward that detonates upon landing, creating a lingering field that slows players caught inside of it.',
+                      style: TextStyle(color: Colors.white),
+                      textAlign: TextAlign.center,
+                    ),
+                    ButtonBar(
+                      children: <Widget>[
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -104,18 +136,16 @@ class Breach extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
+                    SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_q.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/sage_e.png"),
                       ),
                       title: Text(
-                        'Q  Flashpoint',
+                        'E  Healing Orb',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -123,61 +153,7 @@ class Breach extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a blinding charge. FIRE the charge to set a fast-acting burst through the wall. The charge detonates to blind all players looking at it.',
-                      style: TextStyle(color: Colors.white),
-                      textAlign: TextAlign.center,
-                    ),
-                    ButtonBar(
-                      children: <Widget>[
-                        Align(
-                          alignment: Alignment(0.2, 0.6),
-                          child: Text(
-                            'Cost',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                        SizedBox(
-                          width: 3,
-                        ),
-                        FaIcon(FontAwesomeIcons.dotCircle,
-                            color: Color.fromRGBO(30, 229, 179, 1)),
-                        Align(
-                          alignment: Alignment(0.2, 0.6),
-                          child: Text(
-                            '200',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
-                    const ListTile(
-                      leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
-                        maxRadius: 30.0,
-                        backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_e.png"),
-                      ),
-                      title: Text(
-                        'E  Fault Line',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      'EQUIP a seismic blast. HOLD FIRE to increase the distance. RELEASE to set off the quake, dazing all players in its zone and in a line up to the zone.',
+                      'EQUIP a healing orb. FIRE with your crosshairs over a damaged ally to activate a heal-over-time on them. ALT FIRE while Sage is damaged to activate a self heal-over-time.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -212,18 +188,16 @@ class Breach extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
+                    SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_x.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/sage_x.png"),
                       ),
                       title: Text(
-                        'X  Rolling Thunder',
+                        'X  Resurrection',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -231,7 +205,7 @@ class Breach extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a Seismic Charge. FIRE to send a cascading quake through all terrain in a large cone. The quake dazes and knocks up anyone caught in it.',
+                      'EQUIP a resurrection ability. FIRE with your crosshairs placed over a dead ally to begin resurrecting them. After a brief channel, the ally will be brought back to life with full health.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -264,15 +238,5 @@ class Breach extends StatelessWidget {
             ],
           ),
         ));
-  }
-
-  _launchURL() async {
-    const url =
-        'https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_X.mp4';
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
   }
 }
