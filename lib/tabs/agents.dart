@@ -17,21 +17,19 @@ class Agents extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Image.asset(
-                        'img/breach.jpg',
-                        height: 215,
-                        width: 500),
+                    Image.asset('img/breach.jpg', height: 215, width: 500),
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
-                          child: const Text('BUY TICKETS'),
-                          onPressed: () {/* ... */},
-                        ),
-                        FlatButton(
-                          child: FaIcon(
-                            FontAwesomeIcons.infoCircle,
-                            size: 25,
-                            color: Colors.white,
+                          child: Row(
+                            children: <Widget>[
+                              Text('Skilss', style: TextStyle(color: Colors.white)),
+                              FaIcon(
+                                FontAwesomeIcons.infoCircle,
+                                size: 25,
+                                color: Colors.white,
+                              ),
+                            ],
                           ),
                           onPressed: () {
                             Route route = MaterialPageRoute(
@@ -49,10 +47,7 @@ class Agents extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Image.asset(
-                        'img/viper.jpg',
-                        height: 230,
-                        width: 500),
+                    Image.asset('img/viper.jpg', height: 230, width: 500),
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
@@ -81,10 +76,7 @@ class Agents extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Image.asset(
-                        'img/omen.jpg',
-                        height: 230,
-                        width: 500),
+                    Image.asset('img/omen.jpg', height: 230, width: 500),
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
@@ -98,8 +90,8 @@ class Agents extends StatelessWidget {
                             color: Colors.white,
                           ),
                           onPressed: () {
-                            Route route = MaterialPageRoute(
-                                builder: (context) => Omen());
+                            Route route =
+                                MaterialPageRoute(builder: (context) => Omen());
                             Navigator.push(context, route);
                           },
                         ),
@@ -113,42 +105,7 @@ class Agents extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Image.asset(
-                        'img/jett.jpg',
-                        height: 230,
-                        width: 500),
-                    ButtonBar(
-                      children: <Widget>[
-                        FlatButton(
-                          child: const Text('BUY TICKETS'),
-                          onPressed: () {/* ... */},
-                        ),
-                        FlatButton(
-                          child: FaIcon(
-                            FontAwesomeIcons.infoCircle,
-                            size: 25,
-                            color: Colors.white,
-                          ),
-                          onPressed: () {
-                            Route route = MaterialPageRoute(
-                                builder: (context) => Breach());
-                            Navigator.push(context, route);
-                          },
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                color: Color.fromRGBO(14, 24, 35, 1),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    Image.asset(
-                        'img/sage.jpg',
-                        height: 230,
-                        width: 500),
+                    Image.asset('img/jett.jpg', height: 230, width: 500),
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
@@ -177,10 +134,7 @@ class Agents extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Image.asset(
-                        'img/sova.jpg',
-                        height: 230,
-                        width: 500),
+                    Image.asset('img/sage.jpg', height: 230, width: 500),
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
@@ -209,10 +163,7 @@ class Agents extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Image.asset(
-                        'img/phoenix.jpg',
-                        height: 230,
-                        width: 500),
+                    Image.asset('img/sova.jpg', height: 230, width: 500),
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
@@ -241,10 +192,7 @@ class Agents extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Image.asset(
-                        'img/cypher.jpg',
-                        height: 230,
-                        width: 500),
+                    Image.asset('img/phoenix.jpg', height: 230, width: 500),
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
@@ -273,10 +221,7 @@ class Agents extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Image.asset(
-                        'img/brimstone.jpg',
-                        height: 230,
-                        width: 500),
+                    Image.asset('img/cypher.jpg', height: 230, width: 500),
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
@@ -305,10 +250,36 @@ class Agents extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Image.asset(
-                        'img/raze.jpg',
-                        height: 230,
-                        width: 500),
+                    Image.asset('img/brimstone.jpg', height: 230, width: 500),
+                    ButtonBar(
+                      children: <Widget>[
+                        FlatButton(
+                          child: const Text('BUY TICKETS'),
+                          onPressed: () {/* ... */},
+                        ),
+                        FlatButton(
+                          child: FaIcon(
+                            FontAwesomeIcons.infoCircle,
+                            size: 25,
+                            color: Colors.white,
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Breach());
+                            Navigator.push(context, route);
+                          },
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                color: Color.fromRGBO(14, 24, 35, 1),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    Image.asset('img/raze.jpg', height: 230, width: 500),
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
