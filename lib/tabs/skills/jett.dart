@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Jett extends StatelessWidget {
@@ -55,6 +56,27 @@ class Jett extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => Cloudburst());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -107,6 +129,27 @@ class Jett extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => Updraft());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -159,6 +202,27 @@ class Jett extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => Tailwind());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -211,6 +275,27 @@ class Jett extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => BladeStorm());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -238,5 +323,53 @@ class Jett extends StatelessWidget {
             ],
           ),
         ));
+  }
+}
+
+class Cloudburst extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/jett/abilities/Jett_C.mp4",
+    );
+  }
+}
+
+class Updraft extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/jett/abilities/Jett_Q.mp4",
+    );
+  }
+}
+
+class Tailwind extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/jett/abilities/Jett_E.mp4",
+    );
+  }
+}
+
+class BladeStorm extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/jett/abilities/Jett_X.mp4",
+    );
   }
 }

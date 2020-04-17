@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Viper extends StatelessWidget {
@@ -55,6 +56,27 @@ class Viper extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => SnakeBit());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -107,6 +129,27 @@ class Viper extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => PoisonCloud());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -159,6 +202,27 @@ class Viper extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => ToxicScreen());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -211,6 +275,27 @@ class Viper extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => ViperPit());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -238,5 +323,53 @@ class Viper extends StatelessWidget {
             ],
           ),
         ));
+  }
+}
+
+class SnakeBit extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/viper/abilities/Viper_C.mp4",
+    );
+  }
+}
+
+class PoisonCloud extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/viper/abilities/Viper_Q.mp4",
+    );
+  }
+}
+
+class ToxicScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/viper/abilities/Viper_E.mp4",
+    );
+  }
+}
+
+class ViperPit extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/viper/abilities/Viper_X.mp4",
+    );
   }
 }

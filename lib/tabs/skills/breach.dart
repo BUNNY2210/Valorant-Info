@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -74,7 +75,11 @@ class Breach extends StatelessWidget {
                                 ),
                               ],
                             ),
-                            onPressed: _c),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => AfterShock());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -130,23 +135,26 @@ class Breach extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         RaisedButton(
-                          color: Colors.transparent,
-                          child: Row(
-                            children: <Widget>[
-                              Text('Preview',
-                                  style: TextStyle(color: Colors.white)),
-                              SizedBox(
-                                width: 4,
-                              ),
-                              FaIcon(
-                                FontAwesomeIcons.youtube,
-                                size: 25,
-                                color: Colors.white,
-                              ),
-                            ],
-                          ),
-                          onPressed: _q,
-                        ),
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => Flashpoint());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -201,6 +209,27 @@ class Breach extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => Faultline());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -255,6 +284,27 @@ class Breach extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => RollingThunder());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -283,24 +333,52 @@ class Breach extends StatelessWidget {
           ),
         ));
   }
+}
 
-  _c() async {
-    const url =
-        'https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_C.mp4';
-    if (await canLaunch(url)) {
-      await launch(url);
-    } else {
-      throw 'Could not launch $url';
-    }
+class AfterShock extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_C.mp4",
+    );
   }
 }
 
-_q() async {
-  const url =
-      'https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_Q.mp4';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
+class Flashpoint extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_Q.mp4",
+    );
+  }
+}
+
+class Faultline extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_E.mp4",
+    );
+  }
+}
+
+class RollingThunder extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_X.mp4",
+    );
   }
 }

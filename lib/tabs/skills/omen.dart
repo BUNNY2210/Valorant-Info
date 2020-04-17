@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Omen extends StatelessWidget {
@@ -55,6 +56,27 @@ class Omen extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => ShroudedStep());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -107,6 +129,27 @@ class Omen extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => Paranoia());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -159,6 +202,27 @@ class Omen extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => DarkCover());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -211,6 +275,27 @@ class Omen extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => FromtheShadows());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -238,5 +323,53 @@ class Omen extends StatelessWidget {
             ],
           ),
         ));
+  }
+}
+
+class ShroudedStep extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/omen/abilities/Omen_C.mp4",
+    );
+  }
+}
+
+class Paranoia extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/omen/abilities/Omen_Q.mp4",
+    );
+  }
+}
+
+class DarkCover extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/omen/abilities/Omen_E.mp4",
+    );
+  }
+}
+
+class FromtheShadows extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/omen/abilities/Omen_X.mp4",
+    );
   }
 }
