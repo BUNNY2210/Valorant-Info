@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:valorantinfo/tabs/agents.dart';
+import 'package:valorantinfo/tabs/community.dart';
 import 'package:valorantinfo/tabs/third.dart';
 import 'package:valorantinfo/tabs/weapons.dart';
 
@@ -17,7 +18,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    controller = TabController(length: 3, vsync: this);
+    controller = TabController(length: 4, vsync: this);
   }
 
   @override
@@ -39,7 +40,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
         backgroundColor: Color.fromRGBO(14, 24, 35, 1),
       ),
       body: TabBarView(
-        children: <Widget>[Agents(), Weapons(), Maps()],
+        children: <Widget>[Agents(), Weapons(), Maps(), Community()],
         controller: controller,
       ),
       bottomNavigationBar: Material(
@@ -62,6 +63,12 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
             Tab(
               icon: FaIcon(
                 FontAwesomeIcons.solidMap,
+                size: 33,
+              ),
+            ),
+            Tab(
+              icon: FaIcon(
+                FontAwesomeIcons.users,
                 size: 33,
               ),
             ),

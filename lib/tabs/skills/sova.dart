@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Breach extends StatelessWidget {
+class Sova extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +21,7 @@ class Breach extends StatelessWidget {
                   });
             },
           ),
-          title: Text("BREACH"),
+          title: Text("SOVA"),
           backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         ),
         backgroundColor: Color.fromRGBO(14, 76, 71, 1),
@@ -33,18 +33,16 @@ class Breach extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
+                    SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_c.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/sova_c.png"),
                       ),
                       title: Text(
-                        'C  AfeterShock',
+                        'C  Owl Drone',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -52,7 +50,7 @@ class Breach extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a fusion charge. FIRE the charge to set a slow-acting burst through the wall. The burst does heavy damage to anyone caught in its area.',
+                      'EQUIP an owl drone. FIRE to deploy and take control of movement of the drone. While in control of the drone, FIRE to shoot a marking dart. This dart will reveal the location of any player struck by the dart.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -76,7 +74,7 @@ class Breach extends StatelessWidget {
                             ),
                             onPressed: () {
                               Route route = MaterialPageRoute(
-                                  builder: (context) => AfterShock());
+                                  builder: (context) => OwlDrone());
                               Navigator.push(context, route);
                             }),
                         Align(
@@ -108,18 +106,16 @@ class Breach extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
+                    SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_q.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/sova_q.png"),
                       ),
                       title: Text(
-                        'Q  Flashpoint',
+                        'Q  Shock Bolt',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -127,7 +123,7 @@ class Breach extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a blinding charge. FIRE the charge to set a fast-acting burst through the wall. The charge detonates to blind all players looking at it.',
+                      'EQUIP a bow with a shock bolt. FIRE to send the explosive bolt forward, detonating upon collision and damaging players nearby. HOLD FIRE to extend the range of the projectile. ALTERNATE FIRE to add up to two bounces to this arrow.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -151,7 +147,7 @@ class Breach extends StatelessWidget {
                             ),
                             onPressed: () {
                               Route route = MaterialPageRoute(
-                                  builder: (context) => Flashpoint());
+                                  builder: (context) => ShocBolt());
                               Navigator.push(context, route);
                             }),
                         Align(
@@ -169,7 +165,7 @@ class Breach extends StatelessWidget {
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
-                            '200',
+                            '300',
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
@@ -183,18 +179,16 @@ class Breach extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
+                    SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_e.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/sova_e.png"),
                       ),
                       title: Text(
-                        'E  Fault Line',
+                        'E  Recon Bolt',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -202,7 +196,7 @@ class Breach extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a seismic blast. HOLD FIRE to increase the distance. RELEASE to set off the quake, dazing all players in its zone and in a line up to the zone.',
+                      'EQUIP a bow with recon bolt. FIRE to send the recon bolt forward, activating upon collision and revealing the location of nearby enemies caught in the line of sight of the bolt. Enemies can destroy this bolt. HOLD FIRE to extend the range of the projectile. ALTERNATE FIRE to add up to two bounces to this arrow. ',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -226,7 +220,7 @@ class Breach extends StatelessWidget {
                             ),
                             onPressed: () {
                               Route route = MaterialPageRoute(
-                                  builder: (context) => Faultline());
+                                  builder: (context) => ReconBolt());
                               Navigator.push(context, route);
                             }),
                         Align(
@@ -258,18 +252,16 @@ class Breach extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
+                    SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_x.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/sova_x.png"),
                       ),
                       title: Text(
-                        'X  Rolling Thunder',
+                        'X  Hunter’s Fury',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -277,7 +269,7 @@ class Breach extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a Seismic Charge. FIRE to send a cascading quake through all terrain in a large cone. The quake dazes and knocks up anyone caught in it.',
+                      'EQUIP a bow with three long-range, wall-piercing energy blasts. FIRE to release an energy blast in a line in front of Sova, dealing damage and revealing the location of enemies caught in the line. This ability can be RE-USED up to two more times while the ability timer is active.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -301,7 +293,7 @@ class Breach extends StatelessWidget {
                             ),
                             onPressed: () {
                               Route route = MaterialPageRoute(
-                                  builder: (context) => RollingThunder());
+                                  builder: (context) => Hunterfury());
                               Navigator.push(context, route);
                             }),
                         Align(
@@ -319,7 +311,7 @@ class Breach extends StatelessWidget {
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
-                            '••••••• 7 Points',
+                            '••••••• 6 Points',
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
@@ -334,50 +326,50 @@ class Breach extends StatelessWidget {
   }
 }
 
-class AfterShock extends StatelessWidget {
+class ShocBolt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
       withJavascript: true,
       withLocalStorage: true,
       url:
-          "https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_C.mp4",
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/sova/abilities/Sova_Q.mp4",
     );
   }
 }
 
-class Flashpoint extends StatelessWidget {
+class OwlDrone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
       withJavascript: true,
       withLocalStorage: true,
       url:
-          "https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_Q.mp4",
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/sova/abilities/Sova_C.mp4",
     );
   }
 }
 
-class Faultline extends StatelessWidget {
+class ReconBolt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
       withJavascript: true,
       withLocalStorage: true,
       url:
-          "https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_E.mp4",
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/sova/abilities/Sova_E.mp4",
     );
   }
 }
 
-class RollingThunder extends StatelessWidget {
+class Hunterfury extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
       withJavascript: true,
       withLocalStorage: true,
       url:
-          "https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_X.mp4",
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/sova/abilities/Sova_X.mp4",
     );
   }
 }

@@ -5,12 +5,12 @@ import 'package:valorantinfo/tabs/maps/split.dart';
 
 import 'maps/bind.dart';
 
-class Maps extends StatefulWidget {
+class Community extends StatefulWidget {
   @override
   WeaponsPage createState() => WeaponsPage();
 }
 
-class WeaponsPage extends State<Maps> with SingleTickerProviderStateMixin {
+class WeaponsPage extends State<Community> with SingleTickerProviderStateMixin {
 
   TabController controller;
 
@@ -31,13 +31,13 @@ class WeaponsPage extends State<Maps> with SingleTickerProviderStateMixin {
       indicatorColor: Color.fromRGBO(253, 77, 91, 1),
       tabs: <Tab>[
         Tab(
-          child: Text('Haven', style: TextStyle(fontSize: 12),),
+          child: Text('Community', style: TextStyle(fontSize: 12),),
         ),
         Tab(
-          child: Text('Bind', style: TextStyle(fontSize: 12),),
+          child: Text('About', style: TextStyle(fontSize: 12),),
         ),
         Tab(
-          child: Text('Split', style: TextStyle(fontSize: 12),),
+          child: Text('Info', style: TextStyle(fontSize: 12),),
         ),
       ],
       controller: controller,
@@ -56,7 +56,7 @@ class WeaponsPage extends State<Maps> with SingleTickerProviderStateMixin {
     var appBar2 = AppBar(
           elevation: 0,
             title: Text(
-              "Maps",
+              "About",
               style: TextStyle(
                 color: Color.fromRGBO(253, 77, 91, 1),
               ),

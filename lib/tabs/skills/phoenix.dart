@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Breach extends StatelessWidget {
+class Phoenix extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +21,7 @@ class Breach extends StatelessWidget {
                   });
             },
           ),
-          title: Text("BREACH"),
+          title: Text("PHOENIX"),
           backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         ),
         backgroundColor: Color.fromRGBO(14, 76, 71, 1),
@@ -33,18 +33,16 @@ class Breach extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
+                    SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_c.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/phoenix_c.png"),
                       ),
                       title: Text(
-                        'C  AfeterShock',
+                        'C  Blaze',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -52,7 +50,7 @@ class Breach extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a fusion charge. FIRE the charge to set a slow-acting burst through the wall. The burst does heavy damage to anyone caught in its area.',
+                      'EQUIP a flame wall. FIRE to create a line of flame that moves forward, creating a wall of fire that blocks vision and damages players passing through it. HOLD FIRE to bend the wall in the direction of your crosshair.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -76,82 +74,7 @@ class Breach extends StatelessWidget {
                             ),
                             onPressed: () {
                               Route route = MaterialPageRoute(
-                                  builder: (context) => AfterShock());
-                              Navigator.push(context, route);
-                            }),
-                        Align(
-                          alignment: Alignment(0.2, 0.6),
-                          child: Text(
-                            'Cost',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                        SizedBox(
-                          width: 3,
-                        ),
-                        FaIcon(FontAwesomeIcons.dotCircle,
-                            color: Color.fromRGBO(30, 229, 179, 1)),
-                        Align(
-                          alignment: Alignment(0.2, 0.6),
-                          child: Text(
-                            '100',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
-                    const ListTile(
-                      leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
-                        maxRadius: 30.0,
-                        backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_q.png"),
-                      ),
-                      title: Text(
-                        'Q  Flashpoint',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      'EQUIP a blinding charge. FIRE the charge to set a fast-acting burst through the wall. The charge detonates to blind all players looking at it.',
-                      style: TextStyle(color: Colors.white),
-                      textAlign: TextAlign.center,
-                    ),
-                    ButtonBar(
-                      children: <Widget>[
-                        RaisedButton(
-                            color: Colors.transparent,
-                            child: Row(
-                              children: <Widget>[
-                                Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
-                                SizedBox(
-                                  width: 4,
-                                ),
-                                FaIcon(
-                                  FontAwesomeIcons.youtube,
-                                  size: 25,
-                                  color: Colors.white,
-                                ),
-                              ],
-                            ),
-                            onPressed: () {
-                              Route route = MaterialPageRoute(
-                                  builder: (context) => Flashpoint());
+                                  builder: (context) => Blaze());
                               Navigator.push(context, route);
                             }),
                         Align(
@@ -183,18 +106,16 @@ class Breach extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
+                    SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_e.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/phoenix_q.png"),
                       ),
                       title: Text(
-                        'E  Fault Line',
+                        'Q  Curveball ',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -202,7 +123,7 @@ class Breach extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a seismic blast. HOLD FIRE to increase the distance. RELEASE to set off the quake, dazing all players in its zone and in a line up to the zone.',
+                      'EQUIP a flare orb that takes a curving path and detonates shortly after throwing. FIRE to curve the flare orb to the left, detonating and blinding any player who sees the orb. ALTERNATE FIRE to curve the flare orb to the right.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -226,82 +147,7 @@ class Breach extends StatelessWidget {
                             ),
                             onPressed: () {
                               Route route = MaterialPageRoute(
-                                  builder: (context) => Faultline());
-                              Navigator.push(context, route);
-                            }),
-                        Align(
-                          alignment: Alignment(0.2, 0.6),
-                          child: Text(
-                            'Cost',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                        SizedBox(
-                          width: 3,
-                        ),
-                        FaIcon(FontAwesomeIcons.clock,
-                            color: Color.fromRGBO(30, 229, 179, 1)),
-                        Align(
-                          alignment: Alignment(0.2, 0.6),
-                          child: Text(
-                            '35s Cooldown',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
-                  children: <Widget>[
-                    SizedBox(
-                      height: 5,
-                    ),
-                    const ListTile(
-                      leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
-                        maxRadius: 30.0,
-                        backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/breach_x.png"),
-                      ),
-                      title: Text(
-                        'X  Rolling Thunder',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text(
-                      'EQUIP a Seismic Charge. FIRE to send a cascading quake through all terrain in a large cone. The quake dazes and knocks up anyone caught in it.',
-                      style: TextStyle(color: Colors.white),
-                      textAlign: TextAlign.center,
-                    ),
-                    ButtonBar(
-                      children: <Widget>[
-                        RaisedButton(
-                            color: Colors.transparent,
-                            child: Row(
-                              children: <Widget>[
-                                Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
-                                SizedBox(
-                                  width: 4,
-                                ),
-                                FaIcon(
-                                  FontAwesomeIcons.youtube,
-                                  size: 25,
-                                  color: Colors.white,
-                                ),
-                              ],
-                            ),
-                            onPressed: () {
-                              Route route = MaterialPageRoute(
-                                  builder: (context) => RollingThunder());
+                                  builder: (context) => Curveball());
                               Navigator.push(context, route);
                             }),
                         Align(
@@ -319,7 +165,153 @@ class Breach extends StatelessWidget {
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
-                            '••••••• 7 Points',
+                            '100',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                color: Color.fromRGBO(48, 103, 98, 1),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    SizedBox(height: 5,),
+                    const ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        maxRadius: 30.0,
+                        backgroundImage: NetworkImage(
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/phoenix_e.png"),
+                      ),
+                      title: Text(
+                        'E  Hot Hands',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      'EQUIP a fireball. FIRE to throw a fireball that explodes after a set amount of time or upon hitting the ground, creating a lingering fire zone that damages enemies.',
+                      style: TextStyle(color: Colors.white),
+                      textAlign: TextAlign.center,
+                    ),
+                    ButtonBar(
+                      children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => HotHands());
+                              Navigator.push(context, route);
+                            }),
+                        Align(
+                          alignment: Alignment(0.2, 0.6),
+                          child: Text(
+                            'Cost',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        FaIcon(FontAwesomeIcons.clock,
+                            color: Color.fromRGBO(30, 229, 179, 1)),
+                        Align(
+                          alignment: Alignment(0.2, 0.6),
+                          child: Text(
+                            '2 kills',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                color: Color.fromRGBO(48, 103, 98, 1),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    SizedBox(height: 5,),
+                    const ListTile(
+                      leading: CircleAvatar(
+                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        maxRadius: 30.0,
+                        backgroundImage: NetworkImage(
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/phoenix_e.png"),
+                      ),
+                      title: Text(
+                        'X  Run it Back',
+                        style: TextStyle(color: Colors.white),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Text(
+                      'INSTANTLY place a marker at Phoenix location. While this ability is active, dying or allowing the timer to expire will end this ability and bring Phoenix back to this location with full health.',
+                      style: TextStyle(color: Colors.white),
+                      textAlign: TextAlign.center,
+                    ),
+                    ButtonBar(
+                      children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => RunBack());
+                              Navigator.push(context, route);
+                            }),
+                        Align(
+                          alignment: Alignment(0.2, 0.6),
+                          child: Text(
+                            'Cost',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        FaIcon(FontAwesomeIcons.dotCircle,
+                            color: Color.fromRGBO(30, 229, 179, 1)),
+                        Align(
+                          alignment: Alignment(0.2, 0.6),
+                          child: Text(
+                            '••••••• 6 Points',
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
@@ -334,50 +326,50 @@ class Breach extends StatelessWidget {
   }
 }
 
-class AfterShock extends StatelessWidget {
+class Blaze extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
       withJavascript: true,
       withLocalStorage: true,
       url:
-          "https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_C.mp4",
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/phoenix/abilities/Phoenix_C.mp4",
     );
   }
 }
 
-class Flashpoint extends StatelessWidget {
+class Curveball extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
       withJavascript: true,
       withLocalStorage: true,
       url:
-          "https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_Q.mp4",
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/phoenix/abilities/Phoenix_Q.mp4",
     );
   }
 }
 
-class Faultline extends StatelessWidget {
+class HotHands extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
       withJavascript: true,
       withLocalStorage: true,
       url:
-          "https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_E.mp4",
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/phoenix/abilities/Phoenix_E.mp4",
     );
   }
 }
 
-class RollingThunder extends StatelessWidget {
+class RunBack extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
       withJavascript: true,
       withLocalStorage: true,
       url:
-          "https://blitz-cdn-videos.blitz.gg/valorant/agents/breach/abilities/Breach_X.mp4",
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/phoenix/abilities/Phoenix_X.mp4",
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Sage extends StatelessWidget {
@@ -55,6 +56,27 @@ class Sage extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => BarrierOrb());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -107,6 +129,27 @@ class Sage extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => SlowOrb());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -159,6 +202,27 @@ class Sage extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => HealingOrb());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -211,6 +275,27 @@ class Sage extends StatelessWidget {
                     ),
                     ButtonBar(
                       children: <Widget>[
+                        RaisedButton(
+                            color: Colors.transparent,
+                            child: Row(
+                              children: <Widget>[
+                                Text('Preview',
+                                    style: TextStyle(color: Colors.white)),
+                                SizedBox(
+                                  width: 4,
+                                ),
+                                FaIcon(
+                                  FontAwesomeIcons.youtube,
+                                  size: 25,
+                                  color: Colors.white,
+                                ),
+                              ],
+                            ),
+                            onPressed: () {
+                              Route route = MaterialPageRoute(
+                                  builder: (context) => Resurrection());
+                              Navigator.push(context, route);
+                            }),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -238,5 +323,53 @@ class Sage extends StatelessWidget {
             ],
           ),
         ));
+  }
+}
+
+class BarrierOrb extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/sage/abilities/Sage_C.mp4",
+    );
+  }
+}
+
+class SlowOrb extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/sage/abilities/Sage_Q.mp4",
+    );
+  }
+}
+
+class HealingOrb extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/sage/abilities/Sage_E.mp4",
+    );
+  }
+}
+
+class Resurrection extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return WebviewScaffold(
+      withJavascript: true,
+      withLocalStorage: true,
+      url:
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/sage/abilities/Sage_X.mp4",
+    );
   }
 }
