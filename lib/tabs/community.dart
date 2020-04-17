@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:valorantinfo/tabs/maps/haven.dart';
-import 'package:valorantinfo/tabs/maps/split.dart';
-
-import 'maps/bind.dart';
+import 'package:valorantinfo/tabs/about_tabs/about.dart';
+import 'package:valorantinfo/tabs/about_tabs/community_tab.dart';
+import 'package:valorantinfo/tabs/about_tabs/info.dart';
 
 class Community extends StatefulWidget {
   @override
@@ -55,17 +54,11 @@ class WeaponsPage extends State<Community> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     var appBar2 = AppBar(
           elevation: 0,
-            title: Text(
-              "About",
-              style: TextStyle(
-                color: Color.fromRGBO(253, 77, 91, 1),
-              ),
-            ),
             backgroundColor: Color.fromRGBO(14, 24, 35, 1),
             bottom: getTabBar());
     return Scaffold(
         appBar: appBar2,
-        body: getTabBarView(<Widget>[Haven(), Bind(), Split()]));
+        body: getTabBarView(<Widget>[CommunityPage(), About(), Info()]));
   }
 }
 

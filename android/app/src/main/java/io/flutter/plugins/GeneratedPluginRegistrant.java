@@ -15,6 +15,9 @@ public final class GeneratedPluginRegistrant {
   public static void registerWith(@NonNull FlutterEngine flutterEngine) {
     ShimPluginRegistry shimPluginRegistry = new ShimPluginRegistry(flutterEngine);
       com.flutter_webview_plugin.FlutterWebviewPlugin.registerWith(shimPluginRegistry.registrarFor("com.flutter_webview_plugin.FlutterWebviewPlugin"));
+      io.github.ponnamkarthik.flutteryoutube.FlutterYoutubePlugin.registerWith(shimPluginRegistry.registrarFor("io.github.ponnamkarthik.flutteryoutube.FlutterYoutubePlugin"));
+    flutterEngine.getPlugins().add(new io.flutter.plugins.share.SharePlugin());
     flutterEngine.getPlugins().add(new io.flutter.plugins.urllauncher.UrlLauncherPlugin());
+      np.com.sarbagyastha.youtubeplayer.YoutubePlayerPlugin.registerWith(shimPluginRegistry.registrarFor("np.com.sarbagyastha.youtubeplayer.YoutubePlayerPlugin"));
   }
 }
