@@ -16,6 +16,7 @@ dependencies:
   flutter_svg: ^0.17.4
   url_launcher: ^5.4.2
   flutter_webview_plugin: ^0.3.11
+  flutter_cache_manager: ^1.2.2
   
 dev_dependencies:
   flutter_test:
@@ -38,6 +39,9 @@ flutter:
   - img/raze.jpg
   - img/twitter.png
   - img/eric.jpg
+  - img/bind.svg
+  - img/haven.svg
+  - img/split.svg
 
 
 flutter_icons:

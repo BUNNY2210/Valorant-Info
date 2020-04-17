@@ -7,7 +7,7 @@ class Bind extends StatelessWidget {
     return Scaffold(
         backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         body: Container(
-          child: SvgPicture.network('https://blitz-cdn-plain.blitz.gg/blitz/val/maps/bind/images/bind-layout-offense5.svg'),
+          child: SvgPicture.asset("img/bind.svg"),
         ));
   }
 }

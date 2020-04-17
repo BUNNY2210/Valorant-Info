@@ -7,7 +7,7 @@ class Haven extends StatelessWidget {
     return Scaffold(
         backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         body: Container(
-          child: SvgPicture.network('https://blitz-cdn-plain.blitz.gg/blitz/val/maps/haven/images/haven-layout-offense6.svg'),
+          child: SvgPicture.asset("img/haven.svg"),
         ));
   }
 }

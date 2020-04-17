@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_cache_manager/flutter_cache_manager.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Info extends StatelessWidget {
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        key: _scaffoldKey,
         backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         body: SingleChildScrollView(
           child: Column(
@@ -74,7 +77,18 @@ class Info extends StatelessWidget {
                       ],
                     ),
                     onPressed: () {
-                      launch("mailto:ericmontelares3@gmail.com");
+                      DefaultCacheManager().emptyCache();
+                      _scaffoldKey.currentState.showSnackBar(SnackBar(
+                        backgroundColor: Colors.white,
+                        content: Row(
+                          children: <Widget>[
+                            Icon(FontAwesomeIcons.trash, color: Colors.red,),
+                            SizedBox(width: 20,),
+                            Text('Cache has been deleted', style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),),
+                          ],
+                        ),
+                        duration: Duration(seconds: 1),
+                      ));
                     },
                   ),
                 ),
