@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:valorantinfo/tabs/weapon_details/classic_detail.dart';
 
 class SideArm extends StatelessWidget {
   @override
@@ -41,6 +42,21 @@ class SideArm extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        RaisedButton(
+                          color: Color.fromRGBO(14, 24, 35, 1),
+                          child: Text(
+                            "DETAILS",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Classic());
+                            Navigator.push(context, route);
+                          },
+                        )
                       ],
                     ),
                   ],
@@ -78,6 +94,21 @@ class SideArm extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        RaisedButton(
+                          color: Color.fromRGBO(14, 24, 35, 1),
+                          child: Text(
+                            "DETAILS",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Classic());
+                            Navigator.push(context, route);
+                          },
+                        )
                       ],
                     ),
                   ],
@@ -115,6 +146,21 @@ class SideArm extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        RaisedButton(
+                          color: Color.fromRGBO(14, 24, 35, 1),
+                          child: Text(
+                            "DETAILS",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Classic());
+                            Navigator.push(context, route);
+                          },
+                        )
                       ],
                     ),
                   ],
@@ -152,6 +198,21 @@ class SideArm extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        RaisedButton(
+                          color: Color.fromRGBO(14, 24, 35, 1),
+                          child: Text(
+                            "DETAILS",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Classic());
+                            Navigator.push(context, route);
+                          },
+                        )
                       ],
                     ),
                   ],
@@ -189,6 +250,21 @@ class SideArm extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        RaisedButton(
+                          color: Color.fromRGBO(14, 24, 35, 1),
+                          child: Text(
+                            "DETAILS",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Classic());
+                            Navigator.push(context, route);
+                          },
+                        )
                       ],
                     ),
                   ],

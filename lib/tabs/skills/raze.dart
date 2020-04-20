@@ -42,7 +42,7 @@ class Raze extends StatelessWidget {
                             "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/raze_c.png"),
                       ),
                       title: Text(
-                        'C  Stim Beacon',
+                        'C  Boom Bot',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -74,7 +74,7 @@ class Raze extends StatelessWidget {
                             ),
                             onPressed: () {
                               Route route = MaterialPageRoute(
-                                  builder: (context) => StimBeacon());
+                                  builder: (context) => BoomBot());
                               Navigator.push(context, route);
                             }),
                         Align(
@@ -112,10 +112,10 @@ class Raze extends StatelessWidget {
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/brimstone_q.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/raze_q.png"),
                       ),
                       title: Text(
-                        'Q  Incendiary',
+                        'Q  Blast Pack',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -123,7 +123,7 @@ class Raze extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP an incendiary grenade launcher. FIRE to launch a grenade that detonates as it comes to a rest on the floor, creating a lingering fire zone that damages players within the zone.',
+                      'NSTANTLY throw a Blast Pack that will stick to surfaces. RE-USE the ability after deployment to detonate, damaging and moving anything hit.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -147,7 +147,7 @@ class Raze extends StatelessWidget {
                             ),
                             onPressed: () {
                               Route route = MaterialPageRoute(
-                                  builder: (context) => Incendiary());
+                                  builder: (context) => BlastPack());
                               Navigator.push(context, route);
                             }),
                         Align(
@@ -185,10 +185,10 @@ class Raze extends StatelessWidget {
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/brimstone_e.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/raze_e.png"),
                       ),
                       title: Text(
-                        'E  Sky Smoke',
+                        'E  Paint Shells',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -196,7 +196,7 @@ class Raze extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a tactical map. FIRE to set locations where Brimstone smoke clouds will land. ALTERNATE FIRE to confirm, launching long-lasting smoke clouds that block vision in the selected area.',
+                      'EQUIP a cluster grenade. FIRE to throw the grenade, which does damage and creates sub-munitions, each doing damage to anyone in their range.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -220,7 +220,7 @@ class Raze extends StatelessWidget {
                             ),
                             onPressed: () {
                               Route route = MaterialPageRoute(
-                                  builder: (context) => SkySmoke());
+                                  builder: (context) => PaintShells());
                               Navigator.push(context, route);
                             }),
                         Align(
@@ -238,7 +238,7 @@ class Raze extends StatelessWidget {
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
-                            '100',
+                            '(200) 1 Free per round',
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
@@ -258,10 +258,10 @@ class Raze extends StatelessWidget {
                         backgroundColor: Color.fromRGBO(48, 103, 98, 1),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
-                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/brimstone_x.png"),
+                            "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/raze_x.png"),
                       ),
                       title: Text(
-                        'X  Orbital Strike',
+                        'X  Showstopper',
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -269,7 +269,7 @@ class Raze extends StatelessWidget {
                       height: 10,
                     ),
                     Text(
-                      'EQUIP a tactical map. FIRE to launch a lingering orbital strike laser at the selected location, dealing high damage-over-time to players caught in the selected area.',
+                      'EQUIP a rocket launcher. FIRE shoots a rocket that does massive area damage on contact with anything.',
                       style: TextStyle(color: Colors.white),
                       textAlign: TextAlign.center,
                     ),
@@ -293,7 +293,7 @@ class Raze extends StatelessWidget {
                             ),
                             onPressed: () {
                               Route route = MaterialPageRoute(
-                                  builder: (context) => OrbitalStrike());
+                                  builder: (context) => Showstopper());
                               Navigator.push(context, route);
                             }),
                         Align(
@@ -326,50 +326,50 @@ class Raze extends StatelessWidget {
   }
 }
 
-class StimBeacon extends StatelessWidget {
+class BoomBot extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
       withJavascript: true,
       withLocalStorage: true,
       url:
-          "https://blitz-cdn-videos.blitz.gg/valorant/agents/brimstone/abilities/Brimstone_C.mp4",
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/raze/abilities/Raze_C.mp4",
     );
   }
 }
 
-class Incendiary extends StatelessWidget {
+class BlastPack extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
       withJavascript: true,
       withLocalStorage: true,
       url:
-          "https://blitz-cdn-videos.blitz.gg/valorant/agents/brimstone/abilities/Brimstone_Q.mp4",
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/raze/abilities/Raze_Q.mp4",
     );
   }
 }
 
-class SkySmoke extends StatelessWidget {
+class PaintShells extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
       withJavascript: true,
       withLocalStorage: true,
       url:
-          "https://blitz-cdn-videos.blitz.gg/valorant/agents/brimstone/abilities/Brimstone_E.mp4",
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/raze/abilities/Raze_E.mp4",
     );
   }
 }
 
-class OrbitalStrike extends StatelessWidget {
+class Showstopper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
       withJavascript: true,
       withLocalStorage: true,
       url:
-          "https://blitz-cdn-videos.blitz.gg/valorant/agents/brimstone/abilities/Brimstone_X.mp4",
+          "https://blitz-cdn-videos.blitz.gg/valorant/agents/raze/abilities/Raze_X.mp4",
     );
   }
 }
