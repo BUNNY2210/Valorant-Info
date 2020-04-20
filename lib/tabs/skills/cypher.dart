@@ -21,22 +21,24 @@ class Cypher extends StatelessWidget {
                   });
             },
           ),
-          title: Text("VIPER"),
+          title: Text("CYPHER"),
           backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         ),
-        backgroundColor: Color.fromRGBO(14, 76, 71, 1),
+        backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.3),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     const ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        backgroundColor: Color.fromRGBO(14, 24, 35, 0.3),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
                             "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/cypher_c.png"),
@@ -57,18 +59,21 @@ class Cypher extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         RaisedButton(
-                            color: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.transparent)),
+                            color: Colors.white,
                             child: Row(
                               children: <Widget>[
                                 Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
+                                    style: TextStyle(color: Colors.black)),
                                 SizedBox(
                                   width: 4,
                                 ),
                                 FaIcon(
                                   FontAwesomeIcons.youtube,
                                   size: 25,
-                                  color: Colors.white,
+                                  color: Color.fromRGBO(253, 70, 85, 1),
                                 ),
                               ],
                             ),
@@ -77,6 +82,9 @@ class Cypher extends StatelessWidget {
                                   builder: (context) => Trapwire());
                               Navigator.push(context, route);
                             }),
+                        Padding(
+                          padding: EdgeInsets.only(right: 155),
+                        ),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -102,14 +110,16 @@ class Cypher extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.3),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     const ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        backgroundColor: Color.fromRGBO(14, 24, 35, 0.3),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
                             "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/cypher_q.png"),
@@ -130,18 +140,21 @@ class Cypher extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         RaisedButton(
-                            color: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.transparent)),
+                            color: Colors.white,
                             child: Row(
                               children: <Widget>[
                                 Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
+                                    style: TextStyle(color: Colors.black)),
                                 SizedBox(
                                   width: 4,
                                 ),
                                 FaIcon(
                                   FontAwesomeIcons.youtube,
                                   size: 25,
-                                  color: Colors.white,
+                                  color: Color.fromRGBO(253, 70, 85, 1),
                                 ),
                               ],
                             ),
@@ -150,6 +163,9 @@ class Cypher extends StatelessWidget {
                                   builder: (context) => CyberCage());
                               Navigator.push(context, route);
                             }),
+                        Padding(
+                          padding: EdgeInsets.only(right: 155),
+                        ),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -175,14 +191,16 @@ class Cypher extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.3),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     const ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        backgroundColor: Color.fromRGBO(14, 24, 35, 0.3),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
                             "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/cypher_e.png"),
@@ -203,18 +221,21 @@ class Cypher extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         RaisedButton(
-                            color: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.transparent)),
+                            color: Colors.white,
                             child: Row(
                               children: <Widget>[
                                 Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
+                                    style: TextStyle(color: Colors.black)),
                                 SizedBox(
                                   width: 4,
                                 ),
                                 FaIcon(
                                   FontAwesomeIcons.youtube,
                                   size: 25,
-                                  color: Colors.white,
+                                  color: Color.fromRGBO(253, 70, 85, 1),
                                 ),
                               ],
                             ),
@@ -223,6 +244,9 @@ class Cypher extends StatelessWidget {
                                   builder: (context) => Spycam());
                               Navigator.push(context, route);
                             }),
+                        Padding(
+                          padding: EdgeInsets.only(right: 115),
+                        ),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -248,14 +272,16 @@ class Cypher extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.3),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     const ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        backgroundColor: Color.fromRGBO(14, 24, 35, 0.3),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
                             "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/cypher_x.png"),
@@ -276,18 +302,21 @@ class Cypher extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         RaisedButton(
-                            color: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.transparent)),
+                            color: Colors.white,
                             child: Row(
                               children: <Widget>[
                                 Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
+                                    style: TextStyle(color: Colors.black)),
                                 SizedBox(
                                   width: 4,
                                 ),
                                 FaIcon(
                                   FontAwesomeIcons.youtube,
                                   size: 25,
-                                  color: Colors.white,
+                                  color: Color.fromRGBO(253, 70, 85, 1),
                                 ),
                               ],
                             ),
@@ -296,6 +325,9 @@ class Cypher extends StatelessWidget {
                                   builder: (context) => ViperPit());
                               Navigator.push(context, route);
                             }),
+                        Padding(
+                          padding: EdgeInsets.only(right: 80),
+                        ),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(

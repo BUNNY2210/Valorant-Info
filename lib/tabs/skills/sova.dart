@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:valorantinfo/tabs/skills/breach.dart';
 
 class Sova extends StatelessWidget {
   @override
@@ -24,19 +25,19 @@ class Sova extends StatelessWidget {
           title: Text("SOVA"),
           backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         ),
-        backgroundColor: Color.fromRGBO(14, 76, 71, 1),
+        backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.3),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        backgroundColor: Color.fromRGBO(14, 24, 35, 0.3),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
                             "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/sova_c.png"),
@@ -57,18 +58,21 @@ class Sova extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         RaisedButton(
-                            color: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.transparent)),
+                            color: Colors.white,
                             child: Row(
                               children: <Widget>[
                                 Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
+                                    style: TextStyle(color: Colors.black)),
                                 SizedBox(
                                   width: 4,
                                 ),
                                 FaIcon(
                                   FontAwesomeIcons.youtube,
                                   size: 25,
-                                  color: Colors.white,
+                                  color: Color.fromRGBO(253, 70, 85, 1),
                                 ),
                               ],
                             ),
@@ -77,6 +81,9 @@ class Sova extends StatelessWidget {
                                   builder: (context) => OwlDrone());
                               Navigator.push(context, route);
                             }),
+                        Padding(
+                          padding: EdgeInsets.only(right: 155),
+                        ),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -102,14 +109,14 @@ class Sova extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.3),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        backgroundColor: Color.fromRGBO(14, 24, 35, 0.3),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
                             "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/sova_q.png"),
@@ -130,18 +137,21 @@ class Sova extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         RaisedButton(
-                            color: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.transparent)),
+                            color: Colors.white,
                             child: Row(
                               children: <Widget>[
                                 Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
+                                    style: TextStyle(color: Colors.black)),
                                 SizedBox(
                                   width: 4,
                                 ),
                                 FaIcon(
                                   FontAwesomeIcons.youtube,
                                   size: 25,
-                                  color: Colors.white,
+                                  color: Color.fromRGBO(253, 70, 85, 1),
                                 ),
                               ],
                             ),
@@ -150,6 +160,9 @@ class Sova extends StatelessWidget {
                                   builder: (context) => ShocBolt());
                               Navigator.push(context, route);
                             }),
+                        Padding(
+                          padding: EdgeInsets.only(right: 155),
+                        ),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -175,14 +188,14 @@ class Sova extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.3),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        backgroundColor: Color.fromRGBO(14, 24, 35, 0.3),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
                             "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/sova_e.png"),
@@ -203,18 +216,21 @@ class Sova extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         RaisedButton(
-                            color: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.transparent)),
+                            color: Colors.white,
                             child: Row(
                               children: <Widget>[
                                 Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
+                                    style: TextStyle(color: Colors.black)),
                                 SizedBox(
                                   width: 4,
                                 ),
                                 FaIcon(
                                   FontAwesomeIcons.youtube,
                                   size: 25,
-                                  color: Colors.white,
+                                  color: Color.fromRGBO(253, 70, 85, 1),
                                 ),
                               ],
                             ),
@@ -223,6 +239,9 @@ class Sova extends StatelessWidget {
                                   builder: (context) => ReconBolt());
                               Navigator.push(context, route);
                             }),
+                        Padding(
+                          padding: EdgeInsets.only(right: 80),
+                        ),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -248,14 +267,14 @@ class Sova extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.3),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     SizedBox(height: 5,),
                     const ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        backgroundColor: Color.fromRGBO(14, 24, 35, 0.3),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
                             "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/sova_x.png"),
@@ -276,18 +295,21 @@ class Sova extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         RaisedButton(
-                            color: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.transparent)),
+                            color: Colors.white,
                             child: Row(
                               children: <Widget>[
                                 Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
+                                    style: TextStyle(color: Colors.black)),
                                 SizedBox(
                                   width: 4,
                                 ),
                                 FaIcon(
                                   FontAwesomeIcons.youtube,
                                   size: 25,
-                                  color: Colors.white,
+                                  color: Color.fromRGBO(253, 70, 85, 1),
                                 ),
                               ],
                             ),
@@ -296,6 +318,9 @@ class Sova extends StatelessWidget {
                                   builder: (context) => Hunterfury());
                               Navigator.push(context, route);
                             }),
+                        Padding(
+                          padding: EdgeInsets.only(right: 80),
+                        ),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(

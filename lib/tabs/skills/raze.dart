@@ -24,19 +24,21 @@ class Raze extends StatelessWidget {
           title: Text("RAZE"),
           backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         ),
-        backgroundColor: Color.fromRGBO(14, 76, 71, 1),
+        backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.3),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     const ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        backgroundColor: Color.fromRGBO(14, 24, 35, 0.3),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
                             "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/raze_c.png"),
@@ -57,18 +59,21 @@ class Raze extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         RaisedButton(
-                            color: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.transparent)),
+                            color: Colors.white,
                             child: Row(
                               children: <Widget>[
                                 Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
+                                    style: TextStyle(color: Colors.black)),
                                 SizedBox(
                                   width: 4,
                                 ),
                                 FaIcon(
                                   FontAwesomeIcons.youtube,
                                   size: 25,
-                                  color: Colors.white,
+                                  color: Color.fromRGBO(253, 70, 85, 1),
                                 ),
                               ],
                             ),
@@ -77,6 +82,9 @@ class Raze extends StatelessWidget {
                                   builder: (context) => BoomBot());
                               Navigator.push(context, route);
                             }),
+                        Padding(
+                          padding: EdgeInsets.only(right: 155),
+                        ),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -102,14 +110,16 @@ class Raze extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.3),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     const ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        backgroundColor: Color.fromRGBO(14, 24, 35, 0.3),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
                             "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/raze_q.png"),
@@ -130,18 +140,21 @@ class Raze extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         RaisedButton(
-                            color: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.transparent)),
+                            color: Colors.white,
                             child: Row(
                               children: <Widget>[
                                 Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
+                                    style: TextStyle(color: Colors.black)),
                                 SizedBox(
                                   width: 4,
                                 ),
                                 FaIcon(
                                   FontAwesomeIcons.youtube,
                                   size: 25,
-                                  color: Colors.white,
+                                  color: Color.fromRGBO(253, 70, 85, 1),
                                 ),
                               ],
                             ),
@@ -150,6 +163,9 @@ class Raze extends StatelessWidget {
                                   builder: (context) => BlastPack());
                               Navigator.push(context, route);
                             }),
+                        Padding(
+                          padding: EdgeInsets.only(right: 155),
+                        ),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -175,14 +191,16 @@ class Raze extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.3),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     const ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        backgroundColor: Color.fromRGBO(14, 24, 35, 0.3),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
                             "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/raze_e.png"),
@@ -203,18 +221,21 @@ class Raze extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         RaisedButton(
-                            color: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.transparent)),
+                            color: Colors.white,
                             child: Row(
                               children: <Widget>[
                                 Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
+                                    style: TextStyle(color: Colors.black)),
                                 SizedBox(
                                   width: 4,
                                 ),
                                 FaIcon(
                                   FontAwesomeIcons.youtube,
                                   size: 25,
-                                  color: Colors.white,
+                                  color: Color.fromRGBO(253, 70, 85, 1),
                                 ),
                               ],
                             ),
@@ -223,6 +244,9 @@ class Raze extends StatelessWidget {
                                   builder: (context) => PaintShells());
                               Navigator.push(context, route);
                             }),
+                        Padding(
+                          padding: EdgeInsets.only(right: 25),
+                        ),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
@@ -248,14 +272,16 @@ class Raze extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.3),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    SizedBox(height: 5,),
+                    SizedBox(
+                      height: 5,
+                    ),
                     const ListTile(
                       leading: CircleAvatar(
-                        backgroundColor: Color.fromRGBO(48, 103, 98, 1),
+                        backgroundColor: Color.fromRGBO(14, 24, 35, 0.3),
                         maxRadius: 30.0,
                         backgroundImage: NetworkImage(
                             "https://trackercdn.com/cdn/tracker.gg/valorant/db/agents/abilities/raze_x.png"),
@@ -276,18 +302,21 @@ class Raze extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         RaisedButton(
-                            color: Colors.transparent,
+                            shape: RoundedRectangleBorder(
+                                borderRadius: new BorderRadius.circular(5.0),
+                                side: BorderSide(color: Colors.transparent)),
+                            color: Colors.white,
                             child: Row(
                               children: <Widget>[
                                 Text('Preview',
-                                    style: TextStyle(color: Colors.white)),
+                                    style: TextStyle(color: Colors.black)),
                                 SizedBox(
                                   width: 4,
                                 ),
                                 FaIcon(
                                   FontAwesomeIcons.youtube,
                                   size: 25,
-                                  color: Colors.white,
+                                  color: Color.fromRGBO(253, 70, 85, 1),
                                 ),
                               ],
                             ),
@@ -296,6 +325,9 @@ class Raze extends StatelessWidget {
                                   builder: (context) => Showstopper());
                               Navigator.push(context, route);
                             }),
+                        Padding(
+                          padding: EdgeInsets.only(right: 80),
+                        ),
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
