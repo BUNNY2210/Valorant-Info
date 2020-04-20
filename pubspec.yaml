@@ -42,6 +42,7 @@ flutter:
   - img/bind.svg
   - img/haven.svg
   - img/split.svg
+  - img/classic.png
 
 
 flutter_icons:
