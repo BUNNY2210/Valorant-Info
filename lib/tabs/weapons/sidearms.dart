@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:valorantinfo/tabs/weapon_details/classic_detail.dart';
+import 'package:valorantinfo/tabs/weapon_details/frenzy_detail.dart';
+import 'package:valorantinfo/tabs/weapon_details/ghost_detail.dart';
+import 'package:valorantinfo/tabs/weapon_details/sheriff_detail.dart';
+import 'package:valorantinfo/tabs/weapon_details/shorty_detail.dart';
 
 class SideArm extends StatelessWidget {
   @override
@@ -105,7 +109,7 @@ class SideArm extends StatelessWidget {
                           ),
                           onPressed: () {
                             Route route = MaterialPageRoute(
-                                builder: (context) => Classic());
+                                builder: (context) => Shorty());
                             Navigator.push(context, route);
                           },
                         )
@@ -157,7 +161,7 @@ class SideArm extends StatelessWidget {
                           ),
                           onPressed: () {
                             Route route = MaterialPageRoute(
-                                builder: (context) => Classic());
+                                builder: (context) => Frenzy());
                             Navigator.push(context, route);
                           },
                         )
@@ -209,7 +213,7 @@ class SideArm extends StatelessWidget {
                           ),
                           onPressed: () {
                             Route route = MaterialPageRoute(
-                                builder: (context) => Classic());
+                                builder: (context) => Ghost());
                             Navigator.push(context, route);
                           },
                         )
@@ -261,7 +265,7 @@ class SideArm extends StatelessWidget {
                           ),
                           onPressed: () {
                             Route route = MaterialPageRoute(
-                                builder: (context) => Classic());
+                                builder: (context) => Sheriff());
                             Navigator.push(context, route);
                           },
                         )

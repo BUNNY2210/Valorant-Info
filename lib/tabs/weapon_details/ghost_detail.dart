@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class Classic extends StatelessWidget {
+class Ghost extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +21,7 @@ class Classic extends StatelessWidget {
                   });
             },
           ),
-          title: Text("CLASSIC"),
+          title: Text("GHOST"),
           backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         ),
         backgroundColor: Color.fromRGBO(32, 43, 67, 1),
@@ -37,7 +37,7 @@ class Classic extends StatelessWidget {
                       height: 2,
                     ),
                     Image.network(
-                        'https://trackercdn.com/cdn/tracker.gg/valorant/db/weapons/classic-standard.png',
+                        'https://trackercdn.com/cdn/tracker.gg/valorant/db/weapons/ghost-standard.png',
                         height: 215,
                         width: 500),
                     ButtonBar(
@@ -59,7 +59,7 @@ class Classic extends StatelessWidget {
                         Align(
                           alignment: Alignment(0.2, 0.6),
                           child: Text(
-                            '0',
+                            '500',
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
@@ -81,7 +81,7 @@ class Classic extends StatelessWidget {
                             ),
                             onPressed: () {
                               Route route = MaterialPageRoute(
-                                  builder: (context) => ClassicFire());
+                                  builder: (context) => GhostFire());
                               Navigator.push(context, route);
                             }),
                       ],
@@ -94,7 +94,7 @@ class Classic extends StatelessWidget {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Image.asset('img/classic.png', height: 400, width: 500),
+                    Image.asset('img/ghost.png', height: 300, width: 500),
                   ],
                 ),
               ),
@@ -104,14 +104,14 @@ class Classic extends StatelessWidget {
   }
 }
 
-class ClassicFire extends StatelessWidget {
+class GhostFire extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return WebviewScaffold(
       withJavascript: true,
       withLocalStorage: true,
       url:
-          "https://blitz-cdn-videos.blitz.gg/valorant/weapons/classic/spray_footage/classic_primary2.mp4",
+          "https://blitz-cdn-videos.blitz.gg/valorant/weapons/ghost/spray_footage/ghost_primary2.mp4",
     );
   }
 }

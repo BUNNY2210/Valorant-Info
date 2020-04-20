@@ -43,6 +43,10 @@ flutter:
   - img/haven.svg
   - img/split.svg
   - img/classic.png
+  - img/shorty.png
+  - img/frenzy.png
+  - img/ghost.png
+  - img/sheriff.png
 
 
 flutter_icons:
