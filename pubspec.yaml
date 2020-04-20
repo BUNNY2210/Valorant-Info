@@ -27,6 +27,8 @@ flutter:
   assets:
   - img/valorant.png
   - img/valorant.jpg
+  - img/valorantQG.png
+  - img/valorantNewLogo.png
   - img/breach.jpg
   - img/viper.jpg
   - img/omen.jpg
@@ -52,4 +54,4 @@ flutter:
 flutter_icons:
   android: "launcher_icon" 
   ios: true
-  image_path: "icons/valorant.jpg"
+  image_path: "icons/valorantICON.png"

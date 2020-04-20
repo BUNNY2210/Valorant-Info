@@ -6,7 +6,6 @@ import 'package:valorantinfo/tabs/community.dart';
 import 'package:valorantinfo/tabs/third.dart';
 import 'package:valorantinfo/tabs/weapons.dart';
 
-
 class MyHome extends StatefulWidget {
   @override
   MyHomeState createState() => MyHomeState();
@@ -33,10 +32,7 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
       appBar: AppBar(
         elevation: 0,
         centerTitle: true,
-        title: Image.asset(
-            'img/valorant.png',
-            height: 140,
-            width: 500),
+        title: Image.asset('img/valorant.png', height: 100, width: 600),
         backgroundColor: Color.fromRGBO(14, 24, 35, 1),
       ),
       body: TabBarView(
@@ -56,8 +52,9 @@ class MyHomeState extends State<MyHome> with SingleTickerProviderStateMixin {
               ),
             ),
             Tab(
-              icon: Icon(MdiIcons.pistol,
-              size: 33,
+              icon: Icon(
+                MdiIcons.pistol,
+                size: 33,
               ),
             ),
             Tab(
