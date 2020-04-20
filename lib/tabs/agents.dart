@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:valorantinfo/tabs/skills/breach.dart';
+import 'package:valorantinfo/tabs/skills/brimstone.dart';
+import 'package:valorantinfo/tabs/skills/cypher.dart';
 import 'package:valorantinfo/tabs/skills/jett.dart';
 import 'package:valorantinfo/tabs/skills/omen.dart';
 import 'package:valorantinfo/tabs/skills/phoenix.dart';
+import 'package:valorantinfo/tabs/skills/raze.dart';
 import 'package:valorantinfo/tabs/skills/sage.dart';
 import 'package:valorantinfo/tabs/skills/sova.dart';
 import 'package:valorantinfo/tabs/skills/viper.dart';
@@ -244,8 +247,8 @@ class Agents extends StatelessWidget {
                             ],
                           ),
                           onPressed: () {
-                            Route route =
-                                MaterialPageRoute(builder: (context) => Phoenix());
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Phoenix());
                             Navigator.push(context, route);
                           },
                         ),
@@ -263,18 +266,23 @@ class Agents extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
-                          child: const Text('BUY TICKETS'),
-                          onPressed: () {/* ... */},
-                        ),
-                        FlatButton(
-                          child: FaIcon(
-                            FontAwesomeIcons.infoCircle,
-                            size: 25,
-                            color: Colors.white,
+                          child: Row(
+                            children: <Widget>[
+                              Text('SKILLS',
+                                  style: TextStyle(color: Colors.white)),
+                              SizedBox(
+                                width: 12,
+                              ),
+                              FaIcon(
+                                FontAwesomeIcons.infoCircle,
+                                size: 25,
+                                color: Colors.white,
+                              ),
+                            ],
                           ),
                           onPressed: () {
                             Route route = MaterialPageRoute(
-                                builder: (context) => Breach());
+                                builder: (context) => Cypher());
                             Navigator.push(context, route);
                           },
                         ),
@@ -292,18 +300,23 @@ class Agents extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
-                          child: const Text('BUY TICKETS'),
-                          onPressed: () {/* ... */},
-                        ),
-                        FlatButton(
-                          child: FaIcon(
-                            FontAwesomeIcons.infoCircle,
-                            size: 25,
-                            color: Colors.white,
+                          child: Row(
+                            children: <Widget>[
+                              Text('SKILLS',
+                                  style: TextStyle(color: Colors.white)),
+                              SizedBox(
+                                width: 12,
+                              ),
+                              FaIcon(
+                                FontAwesomeIcons.infoCircle,
+                                size: 25,
+                                color: Colors.white,
+                              ),
+                            ],
                           ),
                           onPressed: () {
-                            Route route = MaterialPageRoute(
-                                builder: (context) => Breach());
+                            Route route =
+                                MaterialPageRoute(builder: (context) => Brimstone());
                             Navigator.push(context, route);
                           },
                         ),
@@ -321,18 +334,23 @@ class Agents extends StatelessWidget {
                     ButtonBar(
                       children: <Widget>[
                         FlatButton(
-                          child: const Text('BUY TICKETS'),
-                          onPressed: () {/* ... */},
-                        ),
-                        FlatButton(
-                          child: FaIcon(
-                            FontAwesomeIcons.infoCircle,
-                            size: 25,
-                            color: Colors.white,
+                          child: Row(
+                            children: <Widget>[
+                              Text('SKILLS',
+                                  style: TextStyle(color: Colors.white)),
+                              SizedBox(
+                                width: 12,
+                              ),
+                              FaIcon(
+                                FontAwesomeIcons.infoCircle,
+                                size: 25,
+                                color: Colors.white,
+                              ),
+                            ],
                           ),
                           onPressed: () {
-                            Route route = MaterialPageRoute(
-                                builder: (context) => Breach());
+                            Route route =
+                                MaterialPageRoute(builder: (context) => Raze());
                             Navigator.push(context, route);
                           },
                         ),
