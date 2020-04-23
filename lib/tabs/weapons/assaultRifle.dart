@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:valorantinfo/tabs/weapon_details/bulldog_detail.dart';
+import 'package:valorantinfo/tabs/weapon_details/guardian_detail.dart';
+import 'package:valorantinfo/tabs/weapon_details/phantom_detail.dart';
+import 'package:valorantinfo/tabs/weapon_details/vandal_detail.dart';
 
 class Assault extends StatelessWidget {
   @override
@@ -41,6 +45,21 @@ class Assault extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        RaisedButton(
+                          color: Color.fromRGBO(14, 24, 35, 1),
+                          child: Text(
+                            "DETAILS",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Bulldog());
+                            Navigator.push(context, route);
+                          },
+                        )
                       ],
                     ),
                   ],
@@ -78,6 +97,21 @@ class Assault extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        RaisedButton(
+                          color: Color.fromRGBO(14, 24, 35, 1),
+                          child: Text(
+                            "DETAILS",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Guardian());
+                            Navigator.push(context, route);
+                          },
+                        )
                       ],
                     ),
                   ],
@@ -115,6 +149,21 @@ class Assault extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        RaisedButton(
+                          color: Color.fromRGBO(14, 24, 35, 1),
+                          child: Text(
+                            "DETAILS",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Phantom());
+                            Navigator.push(context, route);
+                          },
+                        )
                       ],
                     ),
                   ],
@@ -152,6 +201,21 @@ class Assault extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        RaisedButton(
+                          color: Color.fromRGBO(14, 24, 35, 1),
+                          child: Text(
+                            "DETAILS",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Vandal());
+                            Navigator.push(context, route);
+                          },
+                        )
                       ],
                     ),
                   ],

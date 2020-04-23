@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:valorantinfo/tabs/weapon_details/spectre_detail.dart';
+import 'package:valorantinfo/tabs/weapon_details/stinger_detail.dart';
 
 class SMGs extends StatelessWidget {
   @override
@@ -41,6 +43,21 @@ class SMGs extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        RaisedButton(
+                          color: Color.fromRGBO(14, 24, 35, 1),
+                          child: Text(
+                            "DETAILS",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Stinger());
+                            Navigator.push(context, route);
+                          },
+                        )
                       ],
                     ),
                   ],
@@ -78,6 +95,21 @@ class SMGs extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
+                        SizedBox(
+                          width: 3,
+                        ),
+                        RaisedButton(
+                          color: Color.fromRGBO(14, 24, 35, 1),
+                          child: Text(
+                            "DETAILS",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          onPressed: () {
+                            Route route = MaterialPageRoute(
+                                builder: (context) => Spectre());
+                            Navigator.push(context, route);
+                          },
+                        )
                       ],
                     ),
                   ],

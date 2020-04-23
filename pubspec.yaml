@@ -49,6 +49,12 @@ flutter:
   - img/frenzy.png
   - img/ghost.png
   - img/sheriff.png
+  - img/stinger.png
+  - img/spectre.png
+  - img/bulldog.png
+  - img/guardian.png
+  - img/phantom.png
+  - img/vandal.png
 
 
 flutter_icons:
