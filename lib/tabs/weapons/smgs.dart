@@ -7,12 +7,12 @@ class SMGs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromRGBO(14, 76, 71, 1),
+        backgroundColor: Color.fromRGBO(14, 24, 35, 1),
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.8),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
@@ -47,7 +47,7 @@ class SMGs extends StatelessWidget {
                           width: 3,
                         ),
                         RaisedButton(
-                          color: Color.fromRGBO(14, 24, 35, 1),
+                          color: Color.fromRGBO(253, 70, 85, 1),
                           child: Text(
                             "DETAILS",
                             style: TextStyle(color: Colors.white),
@@ -64,7 +64,7 @@ class SMGs extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Color.fromRGBO(48, 103, 98, 1),
+                color: Color.fromRGBO(14, 24, 35, 0.8),
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
@@ -99,7 +99,7 @@ class SMGs extends StatelessWidget {
                           width: 3,
                         ),
                         RaisedButton(
-                          color: Color.fromRGBO(14, 24, 35, 1),
+                          color: Color.fromRGBO(253, 70, 85, 1),
                           child: Text(
                             "DETAILS",
                             style: TextStyle(color: Colors.white),

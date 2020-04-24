@@ -55,6 +55,8 @@ flutter:
   - img/guardian.png
   - img/phantom.png
   - img/vandal.png
+  - img/bucky.png
+  - img/judge.png
 
 
 flutter_icons:
