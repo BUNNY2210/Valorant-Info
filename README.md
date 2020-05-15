@@ -6,6 +6,13 @@ A Simple Valorant Information Application, made for the community
 
 ❗ Non-profit application
 
+# Run
+
+1- Get Packages
+
+``` flutter pub get
+```
+
 
 <a href="https://www.buymeacoffee.com/EricMontelares" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
