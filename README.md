@@ -6,7 +6,9 @@ A Simple Valorant Information Application, made for the community
 
 ❗ Non-profit application
 
-# Run
+
+
+# Run 📱
 
 1- Get Packages
 
