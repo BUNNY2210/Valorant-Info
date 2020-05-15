@@ -3,6 +3,7 @@
 A Simple Valorant Information Application, made for the community
 
 ❗ This is not an Official App by Riot Games
+
 ❗ Non-profit application
 
 
