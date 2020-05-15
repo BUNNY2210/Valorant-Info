@@ -8,12 +8,24 @@ A Simple Valorant Information Application, made for the community
 
 
 
-# Run 📱
+# How to Run
 
-1- Get Packages
+1- Get Packages 📦
 
 ``` 
 flutter pub get
+```
+
+2- Check if everything is ok in your flutter and your devices ✔️
+
+``` 
+flutter doctor
+```
+
+3- Run App 📱
+
+``` 
+flutter run
 ```
 
 
