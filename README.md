@@ -1,4 +1,4 @@
-# <a target="_blank"><img src="https://www.futurebehind.com/wp-content/uploads/2020/03/V_Logotype_Red12045.png" alt="Valorant Oficial" height="150" width="200"></a> QG
+# <a target="_blank"><img src="https://www.futurebehind.com/wp-content/uploads/2020/03/V_Logotype_Red12045.png" alt="Valorant Oficial" height="150" width="200"></a> Info
 
 A simple valorant info app
 
