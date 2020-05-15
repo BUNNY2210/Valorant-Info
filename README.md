@@ -10,7 +10,8 @@ A Simple Valorant Information Application, made for the community
 
 1- Get Packages
 
-``` flutter pub get
+``` 
+flutter pub get
 ```
 
 
