@@ -1,8 +1,14 @@
 # <a target="_blank"><img src="https://www.futurebehind.com/wp-content/uploads/2020/03/V_Logotype_Red12045.png" alt="Valorant Oficial" height="150" width="200"></a> Info
 
-A simple valorant info app
+A Simple Valorant Information Application, made for the community
+
+❗ This is not an Official App by Riot Games
+❗ Non-profit application
+
 
 <a href="https://www.buymeacoffee.com/EricMontelares" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+
+
 
 ## Getting Started
 
