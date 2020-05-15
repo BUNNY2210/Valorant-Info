@@ -4,7 +4,7 @@ A simple valorant info app
 
 <a href="https://www.buymeacoffee.com/EricMontelares" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
-<a href="https://www.buymeacoffee.com/EricMontelares" target="_blank"><img src="https://www.futurebehind.com/wp-content/uploads/2020/03/V_Logotype_Red12045.png" alt="Valorant Oficial" height="41" width="174"></a>
+<a href="https://www.buymeacoffee.com/EricMontelares" target="_blank"><img src="https://www.futurebehind.com/wp-content/uploads/2020/03/V_Logotype_Red12045.png" alt="Valorant Oficial" height="41" width="200"></a>
 
 ## Getting Started
 
