@@ -74,7 +74,7 @@ class About extends StatelessWidget {
                       ],
                     ),
                     onPressed: () {
-                      launch("mailto:ericmontelares3@gmail.com");
+                      launch("");
                     },
                   ),
                 ),
