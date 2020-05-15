@@ -18,7 +18,7 @@ class _MyAppState extends State<Splash> {
       image: new Image.asset('img/valorant.jpg'),
       styleTextUnderTheLoader: new TextStyle(),
       photoSize: 100.0,
-      onClick: ()=>print("Flutter Egypt"),
+      onClick: ()=>print("Welcome to my app"),
       loaderColor: Colors.red
     );
   }
