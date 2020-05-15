@@ -30,6 +30,9 @@ flutter run
 
 
 
+
+---------------------------------------------------------------------------------
+
 you can see in Valorant-Info / Android / key.jks
 
 I already added Key.jks within the project (Not recommended for security reasons)
@@ -38,7 +41,7 @@ However this project is open and is not linked to my playstore
 
 You can generate yours separately
 
-
+---------------------------------------------------------------------------------
 
 
 Help me keep creating flutter content and technology 😁
