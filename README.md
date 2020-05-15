@@ -29,6 +29,14 @@ flutter run
 ```
 
 
+# Build
+
+Android - Build Apk 📱
+
+``` 
+flutter build apk
+```
+IOS - Coming Soon 
 
 
 ---------------------------------------------------------------------------------
