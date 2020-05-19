@@ -29,14 +29,33 @@ flutter run
 ```
 
 
+# Build
+
+Android - Build Apk 📱
+
+``` 
+flutter build apk
+```
+IOS - Coming Soon 
+
+
+---------------------------------------------------------------------------------
+
+you can see in Valorant-Info / Android / key.jks
+
+I already added Key.jks within the project (Not recommended for security reasons)
+
+However this project is open and is not linked to my playstore
+
+You can generate yours separately
+
+---------------------------------------------------------------------------------
 
 
 Help me keep creating flutter content and technology 😁
 
 
 <a href="https://www.buymeacoffee.com/EricMontelares" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
-
 
 ## Getting Started
 
