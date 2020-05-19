@@ -32,7 +32,7 @@ class CommunityPage extends StatelessWidget {
                         Align(
                             alignment: Alignment.center,
                             child: Text(
-                              "VALORANT OFICIAL",
+                              "VALORANT OFFICIAL",
                               style:
                                   TextStyle(fontSize: 14, color: Colors.blue),
                             )),
@@ -64,7 +64,7 @@ class CommunityPage extends StatelessWidget {
                         Align(
                             alignment: Alignment.center,
                             child: Text(
-                              "VALORANT OFICIAL",
+                              "VALORANT OFFICIAL",
                               style: TextStyle(fontSize: 14, color: Colors.red),
                             )),
                       ],
@@ -95,7 +95,7 @@ class CommunityPage extends StatelessWidget {
                         Align(
                             alignment: Alignment.center,
                             child: Text(
-                              "VALORANT OFICIAL",
+                              "VALORANT OFFICIAL",
                               style:
                                   TextStyle(fontSize: 14, color: Colors.white),
                             )),
@@ -127,7 +127,7 @@ class CommunityPage extends StatelessWidget {
                         Align(
                             alignment: Alignment.center,
                             child: Text(
-                              "VALORANT OFICIAL",
+                              "VALORANT OFFICIAL",
                               style:
                                   TextStyle(fontSize: 14, color: Colors.white),
                             )),
@@ -158,7 +158,7 @@ class CommunityPage extends StatelessWidget {
                         Align(
                             alignment: Alignment.center,
                             child: Text(
-                              "VALORANT OFICIAL",
+                              "VALORANT OFFICIAL",
                               style:
                                   TextStyle(fontSize: 14, color: Colors.white),
                             )),
